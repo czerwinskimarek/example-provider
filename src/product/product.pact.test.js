@@ -43,6 +43,11 @@ describe("Pact Verification", () => {
           ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1", "green", "gold")]
         ]);
       },
+      "products exist 2": () => {
+        controller.repository.products = new Map([
+          ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1", "green", "gold")]
+        ]);
+      },
       "a product with ID 10 exists": () => {
         controller.repository.products = new Map([
           ["10", new Product("10", "CREDIT_CARD", "28 Degrees", "v1", "yellow", "leather")]
